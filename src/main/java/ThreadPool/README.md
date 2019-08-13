@@ -1,0 +1,7 @@
+什么情况下使用Thread和Runnable创建线程，Runnable和Callable区别  
+两个都可以实现多线程编程，但是基于java是单继承和多实现，所以实现Runable更灵活，并且Runable可以简单的实现变量的线程间共享。
+
+Runnable和Callable区别：  
+实现Callable接口的任务线程能返回执行结果；而实现Runnable接口的任务线程不能返回结果；
+Callable接口的call()方法允许抛出异常；而Runnable接口的run()方法的异常只能在内部消化，不能继续上抛；
+
