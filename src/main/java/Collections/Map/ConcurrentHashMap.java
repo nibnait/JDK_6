@@ -1,4 +1,4 @@
-package 集合.Map;
+package Collections.Map;
 
 /*
  * @(#)ConcurrentHashMap.java	1.21 07/01/02
@@ -7,13 +7,10 @@ package 集合.Map;
  * SUN PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  */
 
-import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.locks.*;
 import java.util.*;
 import java.io.Serializable;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 
 /**
  * A hash table supporting full concurrency of retrievals and
@@ -881,6 +878,7 @@ public class ConcurrentHashMap<K, V> {
         if (value == null)
             throw new NullPointerException();
         int hash = hash(key.hashCode());
+//        int hash = 1;
         return segmentFor(hash).put(key, hash, value, false);
     }
 

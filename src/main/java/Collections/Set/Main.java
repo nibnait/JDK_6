@@ -1,4 +1,4 @@
-package 集合.Set;
+package Collections.Set;
 
 import junit.framework.TestCase;
 import org.junit.Test;

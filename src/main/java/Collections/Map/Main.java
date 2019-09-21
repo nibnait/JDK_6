@@ -1,4 +1,4 @@
-package 集合.Map;
+package Collections.Map;
 
 import junit.framework.TestCase;
 import org.junit.Test;
@@ -25,6 +25,7 @@ public class Main extends TestCase {
 
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap(ConcurrentHashMap.DEFAULT_INITIAL_CAPACITY, ConcurrentHashMap.DEFAULT_LOAD_FACTOR, 20);
         concurrentHashMap.put(1, 1);
+        concurrentHashMap.put(2, 2);
 
         LinkedHashMap linkedHashMap = new LinkedHashMap(16,  0.75f, true);
 

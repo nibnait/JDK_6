@@ -1,4 +1,4 @@
-package 集合.LIst;
+package Collections.LIst;
 
 import junit.framework.TestCase;
 import org.junit.Test;
